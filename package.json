@@ -1,0 +1,24 @@
+{
+  "name": "chai-lint",
+  "version": "0.1.0",
+  "description": "Chai plugin which plays nice with linters",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LFDM/chai-lint.git"
+  },
+  "keywords": [
+    "chai",
+    "eslint",
+    "jshint"
+  ],
+  "author": "LFDM",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/LFDM/chai-lint/issues"
+  },
+  "homepage": "https://github.com/LFDM/chai-lint"
+}
