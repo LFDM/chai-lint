@@ -19,3 +19,11 @@ Use them like this:
 expect(object).toExist();
 expect(array).to.beEmpty();
 ```
+
+Sinon assertions are also supported, for example:
+
+
+```
+expect(spy).to.have.beenCalled();
+```
+

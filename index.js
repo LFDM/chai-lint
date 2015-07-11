@@ -1,5 +1,5 @@
 module.exports = function chaiLint(chai, utils) {
-    var methods = [
+    var standardMethods = [
         'ok',
         'true',
         'false',
@@ -9,13 +9,22 @@ module.exports = function chaiLint(chai, utils) {
         'arguments'
     ];
 
-    addMethods(methods);
+    var sinonMethods = [
+        'called',
+        'calledOnce',
+        'calledTwice',
+        'calledThrice',
+        'calledWithNew',
+    ];
+
+    addMethods(standardMethods, 'be');
+    addMethods(sinonMethods, 'been');
     addMethod('exist', 'toExist');
 
-    function addMethods(methods) {
+    function addMethods(methods, prefix) {
         for (var i = methods.length - 1; i >= 0; i--) {
             var property = methods[i];
-            var name = 'be' + property[0].toUpperCase() + property.slice(1);
+            var name = prefix + property[0].toUpperCase() + property.slice(1);
             addMethod(methods[i], name);
         }
     }
