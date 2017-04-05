@@ -6,7 +6,8 @@ module.exports = function chaiLint(chai, utils) {
         'null',
         'undefined',
         'empty',
-        'arguments'
+        'arguments',
+        'NaN'
     ];
 
     var sinonMethods = [
